@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Container, Button, Row, Col } from 'react-bootstrap';
 
 class App extends React.Component {
   constructor(props) {
@@ -7,11 +8,25 @@ class App extends React.Component {
     this.state = {
       data: ''
     }
+    this.location = this.location.bind(this);
   }
+
+  location() {
+    // if ('geolocation' in navigator) {
+    //   console.log('geolocator found')
+    //   var loc = getCurrentPosition();
+    //   console.log(loc);
+    // } else {
+    //   console.log('geolocation not available')
+    // }
+  }
+
 
   render() {
     return(
-      <div>hello from the FTTracker App!</div>
+      <div>
+        <h1>Hello from the FTTracker App!</h1>
+      </div>
     )
   }
 }
