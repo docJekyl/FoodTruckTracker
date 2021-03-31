@@ -15,12 +15,11 @@ class Header extends React.Component {
 
   render() {
     return(
-      <div className="header">
+      <div className="headerDiv">
         <nav className="navBar">
           <a className="navLink" name="Home" onClick={this.set}>Home</a>
           <a className="navLink"name="About" onClick={this.set}>About</a>
           <a className="navLink"name="Contact Us" onClick={this.set}>Contact Us</a>
-          <a className="navLink"name="Map" onClick={this.set}>Map</a>
         </nav>
       </div>
     );

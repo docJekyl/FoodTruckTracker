@@ -1,4 +1,5 @@
 import React from 'react';
+import Map from './Map/Map.jsx';
 
 class Customer extends React.Component {
   constructor(props) {
@@ -9,7 +10,10 @@ class Customer extends React.Component {
   }
   render() {
     return(
-      <div>Hello from Customer</div>
+      <div>Hello from Customer
+        <Map ftData={this.props.ftData}/>
+      </div>
+
     )
   }
 }
