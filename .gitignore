@@ -1,1 +1,4 @@
 node_modules
+_PRESS-RELEASE.md
+.env.local
+token.js
